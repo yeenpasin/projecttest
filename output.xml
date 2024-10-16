@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.4 on win32)" generated="20241009 14:51:40.792" rpa="false" schemaversion="4">
+<suite id="s1" name="Test" source="c:\Users\pasin.k\Downloads\projecttest\test.robot">
+<test id="s1-t1" name="Open Calculator using run dialog" line="5">
+<kw name="Open using run dialog">
+<var>${result}</var>
+<arg>calc.exe</arg>
+<arg>Calculator</arg>
+<msg timestamp="20241009 14:51:40.828" level="FAIL">No keyword with name 'Open using run dialog' found.</msg>
+<status status="FAIL" starttime="20241009 14:51:40.828" endtime="20241009 14:51:40.829"/>
+</kw>
+<kw name="Get Window Elements">
+<var>${result}</var>
+<status status="NOT RUN" starttime="20241009 14:51:40.831" endtime="20241009 14:51:40.832"/>
+</kw>
+<kw name="Send Keys">
+<arg>5*2=</arg>
+<status status="NOT RUN" starttime="20241009 14:51:40.833" endtime="20241009 14:51:40.833"/>
+</kw>
+<kw name="Get element">
+<var>${result}</var>
+<arg>partial name:Display is</arg>
+<status status="NOT RUN" starttime="20241009 14:51:40.834" endtime="20241009 14:51:40.834"/>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<arg>${result}</arg>
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<status status="NOT RUN" starttime="20241009 14:51:40.835" endtime="20241009 14:51:40.835"/>
+</kw>
+<kw name="Get element rich text">
+<var>${result}</var>
+<arg>id:CalculatorResults</arg>
+<status status="NOT RUN" starttime="20241009 14:51:40.836" endtime="20241009 14:51:40.836"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${result}</arg>
+<arg>Display is 10</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" starttime="20241009 14:51:40.836" endtime="20241009 14:51:40.837"/>
+</kw>
+<kw name="Get element rectangle">
+<var>${result}</var>
+<arg>partial name:Display is</arg>
+<status status="NOT RUN" starttime="20241009 14:51:40.838" endtime="20241009 14:51:40.838"/>
+</kw>
+<kw name="Is Element Visible">
+<var>${result}</var>
+<arg>CalculatorResults</arg>
+<status status="NOT RUN" starttime="20241009 14:51:40.839" endtime="20241009 14:51:40.839"/>
+</kw>
+<kw name="Is Element Enabled">
+<var>${result}</var>
+<arg>partial name:Display is</arg>
+<status status="NOT RUN" starttime="20241009 14:51:40.840" endtime="20241009 14:51:40.840"/>
+</kw>
+<status status="FAIL" starttime="20241009 14:51:40.826" endtime="20241009 14:51:40.841">No keyword with name 'Open using run dialog' found.</status>
+</test>
+<status status="FAIL" starttime="20241009 14:51:40.799" endtime="20241009 14:51:40.842"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20241009 14:51:40.820" level="ERROR">Error in file 'c:\Users\pasin.k\Downloads\projecttest\test.robot' on line 2: Importing library 'RPA.Desktop.Windows' failed: ModuleNotFoundError: No module named 'RPA.Desktop'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  c:\Users\pasin.k\.vscode\extensions\robocorp.robotframework-lsp-1.13.0\src\robotframework_debug_adapter
+  C:\Users\pasin.k\Downloads\projecttest
+  c:\Users\pasin.k\.vscode\extensions\robocorp.robotframework-lsp-1.13.0\src
+  c:\Users\pasin.k\.vscode\extensions\robocorp.robotframework-lsp-1.13.0\src\robotframework_ls\vendored
+  C:\Users\pasin.k\AppData\Local\Programs\Python\Python312\python312.zip
+  C:\Users\pasin.k\AppData\Local\Programs\Python\Python312\DLLs
+  C:\Users\pasin.k\AppData\Local\Programs\Python\Python312\Lib
+  C:\Users\pasin.k\AppData\Local\Programs\Python\Python312
+  C:\Users\pasin.k\AppData\Local\Programs\Python\Python312\Lib\site-packages
+  C:\Users\pasin.k\AppData\Local\Programs\Python\Python312\Lib\site-packages\win32
+  C:\Users\pasin.k\AppData\Local\Programs\Python\Python312\Lib\site-packages\win32\lib
+  C:\Users\pasin.k\AppData\Local\Programs\Python\Python312\Lib\site-packages\Pythonwin</msg>
+</errors>
+</robot>
